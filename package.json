@@ -1,0 +1,15 @@
+{
+  "name": "bigtits-n8n",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BigTits shared n8n connector server",
+  "scripts": {
+    "start": "n8n"
+  },
+  "dependencies": {
+    "n8n": "^1.97.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

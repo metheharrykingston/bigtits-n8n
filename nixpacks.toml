@@ -1,0 +1,9 @@
+# Railway Nixpacks — installs n8n from npm (no Docker registry pulls).
+[phases.setup]
+nixPkgs = ["nodejs_22", "python3", "gcc", "gnumake"]
+
+[phases.install]
+cmds = ["npm ci --omit=dev"]
+
+[start]
+cmd = "npm start"
