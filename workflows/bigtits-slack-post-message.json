@@ -1,0 +1,51 @@
+{
+  "name": "BigTits — Slack Post Message",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bigtits/slack/post_message",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "slack-webhook-1",
+      "name": "BigTits Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "bigtits-slack-post"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { success: true, source: 'bigtits-n8n', connector: 'slack', action: 'post_message', received: $json } }}"
+      },
+      "id": "slack-respond-1",
+      "name": "Respond to BigTits",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [520, 300]
+    }
+  ],
+  "connections": {
+    "BigTits Webhook": {
+      "main": [
+        [
+          {
+            "node": "Respond to BigTits",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": [
+    { "name": "bigtits" },
+    { "name": "bigtits:slack" },
+    { "name": "bigtits:slack:post_message" }
+  ]
+}
