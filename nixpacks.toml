@@ -6,4 +6,4 @@ nixPkgs = ["nodejs_22", "python3", "gcc", "gnumake"]
 cmds = ["npm ci --omit=dev"]
 
 [start]
-cmd = "npm start"
+cmd = "bash scripts/railway-start.sh"

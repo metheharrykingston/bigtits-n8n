@@ -4,7 +4,7 @@
   "private": true,
   "description": "BigTits shared n8n connector server",
   "scripts": {
-    "start": "n8n"
+    "start": "bash scripts/railway-start.sh"
   },
   "dependencies": {
     "n8n": "^1.97.0"
