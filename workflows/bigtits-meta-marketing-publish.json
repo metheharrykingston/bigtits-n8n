@@ -30,6 +30,12 @@
               "name": "ad_count",
               "value": "={{ $json.campaign.ads.length }}",
               "type": "number"
+            },
+            {
+              "id": "api-payload",
+              "name": "api_payload",
+              "value": "={{ $json.api_payload || $json.campaign.api_payload }}",
+              "type": "object"
             }
           ]
         },
