@@ -6,6 +6,8 @@ Deployed from this folder via `git subtree` → [bigtits-n8n](https://github.com
 
 Railway builds with **Nixpacks** (`npm install n8n`) — no Docker image pull from `docker.n8n.io` or Docker Hub.
 
+Railway healthcheck should point to `/healthz`. This repo now sets that explicitly in `railway.json`.
+
 **If Railway still shows `docker.n8n.io` in build logs:** the service is not connected to this repo. See [RAILWAY.md](../RAILWAY.md) § n8n — connect `metheharrykingston/bigtits-n8n`, branch `main`, empty Root Directory, then **Redeploy**.
 
 ## Starter workflows
